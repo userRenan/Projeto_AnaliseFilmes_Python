@@ -6,15 +6,45 @@
 
 
 
-Este projeto apresenta uma \*\*Análise Exploratória de Dados (EDA)\*\* realizada sobre um dataset contendo informações de filmes e séries da Netflix.
+Este projeto apresenta uma \*\*Análise Exploratória de Dados (EDA)\*\* sobre um dataset contendo informações de filmes e séries disponíveis na Netflix.
 
 
 
-O projeto foi desenvolvido utilizando Python e ferramentas de análise e visualização de dados, passando por etapas de exploração, limpeza, pré-processamento, tratamento de inconsistências e extração de insights.
+O objetivo é explorar, limpar e transformar os dados para identificar \*\*padrões, tendências e informações relevantes\*\* sobre o catálogo, utilizando Python e suas principais bibliotecas para análise e visualização de dados.
 
 
 
-O objetivo é compreender melhor a estrutura e as características dos dados, identificando padrões e informações relevantes sobre os títulos presentes no catálogo.
+Durante o projeto foram realizadas etapas de \*\*exploração, limpeza, tratamento de dados, transformação de colunas, criação de novas variáveis, análise de informações e visualização dos resultados\*\*.
+
+
+
+\---
+
+
+
+\## 🎯 Objetivos
+
+
+
+\- Explorar a estrutura e as características do dataset.
+
+\- Identificar e tratar problemas de qualidade nos dados.
+
+\- Analisar a distribuição de filmes e séries.
+
+\- Identificar períodos com maior quantidade de títulos adicionados.
+
+\- Analisar os países presentes no catálogo.
+
+\- Explorar os gêneros e categorias dos títulos.
+
+\- Analisar a duração dos conteúdos.
+
+\- Criar novos atributos para facilitar as análises.
+
+\- Extrair insights a partir dos dados.
+
+\- Utilizar visualizações para facilitar a interpretação dos resultados.
 
 
 
@@ -26,13 +56,15 @@ O objetivo é compreender melhor a estrutura e as características dos dados, id
 
 
 
-A primeira etapa do projeto foi dedicada à exploração inicial do dataset para compreender sua estrutura e qualidade.
+A primeira etapa foi dedicada à compreensão da estrutura e qualidade dos dados.
 
 
 
 Foram realizadas análises como:
 
 
+
+\- Visualização das primeiras e últimas linhas do dataset.
 
 \- Verificação das informações gerais do DataFrame.
 
@@ -42,9 +74,13 @@ Foram realizadas análises como:
 
 \- Identificação de registros duplicados.
 
-\- Análise de estatísticas descritivas das colunas categóricas.
+\- Análise da quantidade de linhas e colunas.
 
-\- Verificação da estrutura e quantidade de registros do dataset.
+\- Análise de valores únicos.
+
+\- Estatísticas descritivas.
+
+\- Análise das variáveis categóricas.
 
 
 
@@ -56,29 +92,25 @@ Foram realizadas análises como:
 
 
 
-Após a análise inicial, foram realizados procedimentos para melhorar a qualidade e a consistência dos dados.
+Após a exploração inicial, foram realizados procedimentos para melhorar a qualidade e a consistência dos dados.
 
 
 
-As principais etapas foram:
+Entre as etapas realizadas estão:
 
 
 
-\- Criação de uma cópia do DataFrame original para preservar os dados.
+\- Criação de uma cópia do DataFrame original.
 
-\- Conversão da coluna `release\_year` para um tipo numérico.
+\- Identificação e tratamento de valores ausentes.
 
-\- Tratamento de valores que não pudessem ser convertidos através de `errors='coerce'`.
+\- Verificação e tratamento de registros duplicados.
 
-\- Identificação de colunas com valores ausentes.
+\- Padronização e conversão de tipos de dados.
 
-\- Preenchimento dos valores ausentes em colunas de texto com `"Não Informado"`.
+\- Tratamento de informações inconsistentes.
 
-\- Identificação e visualização dos registros duplicados.
-
-\- Remoção dos registros duplicados.
-
-\- Verificação posterior para confirmar a remoção das duplicidades.
+\- Organização das colunas para facilitar as análises.
 
 
 
@@ -86,51 +118,29 @@ As principais etapas foram:
 
 
 
-\## 📊 Análise de Outliers
+\## ⚙️ Engenharia de Atributos
 
 
 
-Também foi realizada uma análise dos valores da coluna `release\_year` para identificar possíveis valores discrepantes.
+Durante o projeto foram criadas novas informações a partir das colunas existentes para facilitar a análise dos dados.
 
 
 
-Durante essa etapa:
+Um dos exemplos foi o tratamento da coluna de duração (`duration`), que contém informações como:
 
 
 
-\- Foram analisadas as estatísticas descritivas da coluna.
+\- `120 min`
 
-\- Foi identificado um valor de ano superior a 2025.
-
-\- O valor considerado discrepante foi substituído por `NaN` para evitar que uma informação inconsistente interferisse nas análises posteriores.
+\- `2 Seasons`
 
 
 
-\---
+A partir desses dados foram extraídas informações separadas, permitindo analisar numericamente a duração dos conteúdos e diferenciar valores relacionados a \*\*minutos\*\* e \*\*temporadas\*\*.
 
 
 
-\## 🔍 Extração de Insights e Análise dos Dados
-
-
-
-Com os dados tratados, foram realizadas análises para extrair informações relevantes do dataset.
-
-
-
-Entre as análises realizadas estão:
-
-
-
-\- Verificação do dataset após o processo de limpeza.
-
-\- Identificação da quantidade total de títulos.
-
-\- Contagem da quantidade de títulos por ano de lançamento.
-
-\- Ordenação dos registros por ano para facilitar a análise temporal.
-
-\- Preparação dos dados para criação das visualizações.
+Essa transformação facilita a realização de análises e visualizações mais precisas.
 
 
 
@@ -138,35 +148,65 @@ Entre as análises realizadas estão:
 
 
 
-\## 📈 Visualização dos Dados e Análise
+\## 📊 Análises e Insights
 
 
 
-Foram desenvolvidas visualizações utilizando \*\*Matplotlib\*\* para facilitar a interpretação dos resultados.
+Após o tratamento dos dados, foram realizadas diferentes análises para compreender melhor o catálogo.
 
 
 
-\### 📅 Quantidade de Títulos Lançados por Ano
+Entre os insights explorados estão:
 
 
 
-Foi criado um \*\*gráfico de linha\*\* para analisar a quantidade de títulos lançados ao longo dos anos.
+\- 🎬 Quantidade total de filmes e séries.
+
+\- 📅 Análise dos títulos por ano.
+
+\- 📈 Identificação dos anos com maior quantidade de títulos.
+
+\- 🌎 Análise dos países presentes no catálogo.
+
+\- 🎭 Distribuição dos gêneros e categorias.
+
+\- ⏱️ Análise da duração dos filmes.
+
+\- 📺 Análise da quantidade de temporadas das séries.
+
+\- 🔝 Identificação das categorias e tipos de conteúdo mais frequentes.
+
+\- 🔎 Exploração de padrões e características presentes no catálogo.
 
 
 
-Essa visualização permite observar a evolução do número de títulos presentes no dataset e identificar períodos com maior concentração de lançamentos.
+\---
 
 
 
-\### 🎬 Distribuição de Filmes e Séries
+\## 📈 Visualização dos Dados
 
 
 
-Foi criado um \*\*gráfico de pizza\*\* para representar a proporção entre filmes e séries presentes no catálogo.
+Foram utilizadas visualizações gráficas para facilitar a interpretação dos resultados e destacar os principais padrões encontrados durante a análise.
 
 
 
-A visualização apresenta tanto a quantidade relativa de cada tipo quanto sua participação percentual no dataset.
+Entre as visualizações realizadas estão gráficos relacionados a:
+
+
+
+\- Distribuição entre filmes e séries.
+
+\- Quantidade de títulos por ano.
+
+\- Distribuição de categorias e gêneros.
+
+\- Países com maior quantidade de títulos.
+
+\- Duração dos conteúdos.
+
+\- Outras análises relevantes encontradas durante a exploração dos dados.
 
 
 
@@ -180,17 +220,19 @@ A visualização apresenta tanto a quantidade relativa de cada tipo quanto sua p
 
 \- 🐍 \*\*Python\*\*
 
-\- 🐼 \*\*Pandas\*\* — manipulação, limpeza e análise dos dados
+\- 🐼 \*\*Pandas\*\*
 
-\- 📊 \*\*Matplotlib\*\* — criação das visualizações
+\- 🔢 \*\*NumPy\*\*
 
-\- 📓 \*\*Jupyter Notebook\*\* — desenvolvimento e documentação da análise
+\- 📊 \*\*Matplotlib\*\*
 
-\- 📄 \*\*CSV\*\* — armazenamento do dataset
+\- 📓 \*\*Jupyter Notebook\*\*
 
-\- 🔧 \*\*Git\*\* — controle de versão
+\- 🔧 \*\*Git\*\*
 
-\- 🐙 \*\*GitHub\*\* — armazenamento e compartilhamento do projeto
+\- 🐙 \*\*GitHub\*\*
+
+\- 🗄️ \*\*SQL\*\*
 
 
 
@@ -198,43 +240,67 @@ A visualização apresenta tanto a quantidade relativa de cada tipo quanto sua p
 
 
 
-\## 📁 Estrutura do projeto
+\## 📂 Estrutura do projeto
 
 
 
 ```text
 
-Projeto\_AnaliseFilmes\_Python/
+Projeto\_Analise\_Filmes/
 
 │
 
 ├── ProjetoFilmes.ipynb
 
-├── netflix\_titles\_sujo.csv
+├── README.md
 
-├── .gitignore
+└── .gitignore
 
-└── README.md
-
-
-
-▶️ Como executar o projeto
-
-Clone o repositório:git clone https://github.com/userRenan/Projeto\_AnaliseFilmes\_Python.git
+```
 
 
 
-Acesse a pasta do projeto: cd Projeto\_AnaliseFilmes\_Python
+\---
 
 
 
-👨‍💻 Autor
-
-Renan Araújo
+\## 💡 Principais aprendizados
 
 
 
-Projeto desenvolvido como parte da minha jornada de aprendizado em Ciência de Dados, Python e Análise de Dados.
+Este projeto permitiu praticar conceitos importantes de análise de dados utilizando Python, incluindo:
 
 
+
+\- Manipulação de DataFrames com Pandas.
+
+\- Exploração e compreensão de datasets.
+
+\- Tratamento de valores ausentes e duplicados.
+
+\- Transformação e criação de novas variáveis.
+
+\- Análise de dados categóricos e numéricos.
+
+\- Criação de visualizações com Matplotlib.
+
+\- Extração de insights a partir dos dados.
+
+\- Organização e publicação de um projeto utilizando Git e GitHub.
+
+
+
+\---
+
+
+
+\## 👨‍💻 Autor
+
+
+
+\*\*Renan Araujo\*\*
+
+
+
+Projeto desenvolvido como parte dos estudos em \*\*Python, Análise de Dados e Ciência de Dados\*\*.
 
