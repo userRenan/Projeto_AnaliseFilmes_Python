@@ -1,7 +1,5 @@
 🎬 Análise de Filmes e Séries com Python
 
-
-
 📌 Sobre o projeto
 
 Este projeto apresenta uma Análise Exploratória de Dados (EDA) sobre um dataset contendo informações de filmes e séries da Netflix.
@@ -9,8 +7,6 @@ Este projeto apresenta uma Análise Exploratória de Dados (EDA) sobre um datase
 O objetivo é explorar, limpar e transformar os dados para identificar padrões, tendências e informações relevantes sobre o catálogo.
 
 Durante o projeto foram realizadas etapas de exploração, limpeza, tratamento de dados, transformação de colunas, criação de novas variáveis, análise de informações e visualização dos resultados.
-
-
 
 🎯 Objetivos
 
@@ -34,17 +30,11 @@ Durante o projeto foram realizadas etapas de exploração, limpeza, tratamento d
 
 \- Criar visualizações para facilitar a interpretação dos resultados.
 
-
-
 🔎 Análise Exploratória de Dados (EDA)
-
-
 
 Foram realizadas análises iniciais para compreender a estrutura e a qualidade dos dados.
 
 Entre elas:
-
-
 
 \- Verificação das informações gerais do DataFrame.
 
@@ -62,19 +52,11 @@ Entre elas:
 
 \- Análise das variáveis categóricas.
 
-
-
 🧹 Limpeza e Pré-Processamento
-
-
 
 Após a análise inicial, foram realizados procedimentos para melhorar a qualidade dos dados.
 
-
-
 As principais etapas foram:
-
-
 
 \- Criação de uma cópia do DataFrame original.
 
@@ -88,57 +70,57 @@ As principais etapas foram:
 
 \- Organização dos dados para as análises.
 
-
-
 ⚙️ Engenharia de Atributos
-
-
 
 Foi realizada a transformação da coluna duration, que apresenta informações como 120 min e 2 Seasons.
 
 A partir dessa coluna foram extraídas informações que permitem analisar separadamente a duração dos filmes e a quantidade de temporadas das séries.
 
-
-
 📊 Análises e Insights
 
+Foram realizadas análises para identificar diferentes características do catálogo.
 
+🎬 Filmes e Séries
 
-Foram realizadas análises para identificar diferentes características do catálogo, como:
+\- Quantidade total de filmes.
 
+\- Quantidade total de séries.
 
+\- Comparação entre os dois tipos de conteúdo.
 
-\- 🎬 Quantidade total de filmes e séries.
+📅 Análise por Ano
 
-\- 📅 Distribuição dos títulos por ano.
+\- Distribuição dos títulos por ano.
 
-\- 📈 Ano com maior quantidade de títulos.
+\- Identificação dos anos com maior quantidade de títulos.
 
-\- 🌎 Países com maior quantidade de títulos.
+🌎 Análise por País
 
-\- 🎭 Distribuição dos gêneros e categorias.
+\- Países com maior quantidade de títulos.
 
-\- ⏱️ Duração dos filmes.
+\- Distribuição dos conteúdos entre diferentes países.
 
-\- 📺 Quantidade de temporadas das séries.
+🎭 Categorias e Gêneros
 
-\- 🔝 Categorias mais frequentes.
+\- Categorias mais frequentes.
 
-\- 🔎 Identificação de padrões presentes no catálogo.
+\- Gêneros com maior presença no catálogo.
 
+\- Distribuição dos conteúdos por categoria.
 
+⏱️ Duração
+
+\- Análise da duração dos filmes.
+
+\- Distribuição das durações.
+
+\- Quantidade de temporadas das séries.
 
 📈 Visualização dos Dados
 
-
-
 Foram utilizados gráficos para facilitar a interpretação dos resultados e destacar os principais padrões encontrados durante a análise.
 
-
-
 As visualizações abordam aspectos como:
-
-
 
 \- Distribuição entre filmes e séries.
 
@@ -150,11 +132,7 @@ As visualizações abordam aspectos como:
 
 \- Duração dos conteúdos.
 
-
-
-🛠️ Tecnologias utilizadas
-
-
+🛠️ Tecnologias Utilizadas
 
 🐍 Python
 
@@ -170,15 +148,9 @@ As visualizações abordam aspectos como:
 
 🐙 GitHub
 
-
-
-💡 Principais aprendizados
-
-
+💡 Principais Aprendizados
 
 Este projeto permitiu praticar conceitos importantes de análise de dados utilizando Python, incluindo:
-
-
 
 \- Manipulação de DataFrames com Pandas.
 
@@ -196,13 +168,9 @@ Este projeto permitiu praticar conceitos importantes de análise de dados utiliz
 
 \- Versionamento e publicação de projetos utilizando Git e GitHub.
 
-
-
 👨‍💻 Autor
 
-Renan Araújo
-
-
+Renan Araujo
 
 Projeto desenvolvido como parte dos estudos em Python, Análise de Dados e Ciência de Dados.
 
