@@ -32,7 +32,7 @@ Durante o projeto foram realizadas etapas de \*\*exploração, limpeza, tratamen
 
 \- Analisar a distribuição de filmes e séries.
 
-\- Identificar períodos com maior quantidade de títulos adicionados.
+\- Identificar períodos com maior quantidade de títulos.
 
 \- Analisar os países presentes no catálogo.
 
@@ -126,21 +126,11 @@ Durante o projeto foram criadas novas informações a partir das colunas existen
 
 
 
-Um dos exemplos foi o tratamento da coluna de duração (`duration`), que contém informações como:
+Um dos exemplos foi o tratamento da coluna `duration`, que contém informações como `120 min` e `2 Seasons`.
 
 
 
-\- `120 min`
-
-\- `2 Seasons`
-
-
-
-A partir desses dados foram extraídas informações separadas, permitindo analisar numericamente a duração dos conteúdos e diferenciar valores relacionados a \*\*minutos\*\* e \*\*temporadas\*\*.
-
-
-
-Essa transformação facilita a realização de análises e visualizações mais precisas.
+A partir desses dados foram extraídas informações separadas, permitindo analisar numericamente a duração dos conteúdos e diferenciar valores relacionados a minutos e temporadas.
 
 
 
@@ -218,21 +208,21 @@ Entre as visualizações realizadas estão gráficos relacionados a:
 
 
 
-\- 🐍 \*\*Python\*\*
+\- 🐍 Python
 
-\- 🐼 \*\*Pandas\*\*
+\- 🐼 Pandas
 
-\- 🔢 \*\*NumPy\*\*
+\- 🔢 NumPy
 
-\- 📊 \*\*Matplotlib\*\*
+\- 📊 Matplotlib
 
-\- 📓 \*\*Jupyter Notebook\*\*
+\- 📓 Jupyter Notebook
 
-\- 🔧 \*\*Git\*\*
+\- 🔧 Git
 
-\- 🐙 \*\*GitHub\*\*
+\- 🐙 GitHub
 
-\- 🗄️ \*\*SQL\*\*
+\- 🗄️ SQL
 
 
 
@@ -256,21 +246,11 @@ Projeto\_Analise\_Filmes/
 
 └── .gitignore
 
-```
 
 
-
-\---
-
-
-
-\## 💡 Principais aprendizados
-
-
+💡 Principais aprendizados
 
 Este projeto permitiu praticar conceitos importantes de análise de dados utilizando Python, incluindo:
-
-
 
 \- Manipulação de DataFrames com Pandas.
 
@@ -290,17 +270,9 @@ Este projeto permitiu praticar conceitos importantes de análise de dados utiliz
 
 
 
-\---
+👨‍💻 Autor
 
+Renan Araujo
 
-
-\## 👨‍💻 Autor
-
-
-
-\*\*Renan Araujo\*\*
-
-
-
-Projeto desenvolvido como parte dos estudos em \*\*Python, Análise de Dados e Ciência de Dados\*\*.
+Projeto desenvolvido como parte dos estudos em Python, Análise de Dados e Ciência de Dados.
 
