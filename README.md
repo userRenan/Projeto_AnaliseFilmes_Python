@@ -216,61 +216,25 @@ Projeto\_AnaliseFilmes\_Python/
 
 └── README.md
 
-```
+
+
+▶️ Como executar o projeto
+
+Clone o repositório:git clone https://github.com/userRenan/Projeto\_AnaliseFilmes\_Python.git
 
 
 
-\---
+Acesse a pasta do projeto: cd Projeto\_AnaliseFilmes\_Python
 
 
 
-\## ▶️ Como executar o projeto
+👨‍💻 Autor
+
+Renan Araújo
 
 
 
-Clone o repositório:
+Projeto desenvolvido como parte da minha jornada de aprendizado em Ciência de Dados, Python e Análise de Dados.
 
 
-
-```bash
-
-git clone https://github.com/userRenan/Projeto\_AnaliseFilmes\_Python.git
-
-```
-
-
-
-Acesse a pasta do projeto:
-
-
-
-```bash
-
-cd Projeto\_AnaliseFilmes\_Python
-
-```
-
-
-
-Abra o arquivo `ProjetoFilmes.ipynb` utilizando o Jupyter Notebook ou JupyterLab.
-
-
-
-Certifique-se de que o arquivo `netflix\_titles\_sujo.csv` esteja na mesma pasta do notebook para que o dataset seja carregado corretamente.
-
-
-
-\---
-
-
-
-\## 👨‍💻 Autor
-
-
-
-\*\*Renan Araujo\*\*
-
-
-
-Projeto desenvolvido como parte da minha jornada de aprendizado em \*\*Ciência de Dados, Python e Análise de Dados\*\*.
 
